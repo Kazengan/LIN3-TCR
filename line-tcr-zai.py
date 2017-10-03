@@ -15,7 +15,7 @@ print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage =""" Chivas Bot
+helpMessage =""" Zai Bot
 [Id︎]
 [Mid]
 [Me︎]
@@ -34,7 +34,7 @@ helpMessage =""" Chivas Bot
 [Jam on/off]
 [Change clock:「name」]
 [Up]
-[Cv join]
+[zai join]
 
 [*] Command in the groups [*]
 
@@ -92,7 +92,7 @@ wait = {
     "wblack":False,
     "dblack":False,
     "clock":True,
-    "cName":"Chivas ",
+    "cName":"ZAI [BOT] V.1 ",
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
@@ -1321,11 +1321,11 @@ def bot(op):
                 else:
                     cl.sendText(msg.to,"Please turn on the name clock")
 
-            elif msg.text == "$set":
-                    cl.sendText(msg.to, "Check sider")
-                    ki.sendText(msg.to, "Check sider")
-                    kk.sendText(msg.to, "Check sider")
-                    kc.sendText(msg.to, "Check sider")
+            elif msg.text == "siap cyduck":
+                    cl.sendText(msg.to, "watchout tercyduck..!")
+                    ki.sendText(msg.to, "watchout tercyduck..!")
+                    kk.sendText(msg.to, "watchout tercyduck..!")
+                    kc.sendText(msg.to, "watchout tercyduck..!")
                     try:
                         del wait2['readPoint'][msg.to]
                         del wait2['readMember'][msg.to]
@@ -1335,7 +1335,7 @@ def bot(op):
                     wait2['readMember'][msg.to] = ""
                     wait2['ROM'][msg.to] = {}
                     print wait2
-            elif msg.text == "$read":
+            elif msg.text == "cyduck":
                     if msg.to in wait2['readPoint']:
                         if wait2["ROM"][msg.to].items() == []:
                             chiya = ""
